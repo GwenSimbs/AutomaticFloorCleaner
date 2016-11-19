@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.gwen.automaticfloorcleaner.HomePage">
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New ToggleButton"
+        android:id="@+id/toggleStartStop"
+        android:textOff="Start"
+        android:textOn="Stop"
+        android:checked="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/btnRCMode"
+        android:layout_alignEnd="@+id/btnRCMode" />
+
+
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="Select Room"
+            android:id="@+id/btnSelectRoom"
+            android:layout_above="@+id/btnNotification"
+            android:layout_alignLeft="@+id/btnNotification"
+            android:layout_alignStart="@+id/btnNotification"
+            android:layout_alignRight="@+id/btnNotification"
+            android:layout_alignEnd="@+id/btnNotification" />
+
+        <Button
+            android:layout_width="168dp"
+            android:layout_height="wrap_content"
+            android:text="Switch to RC mode"
+            android:id="@+id/btnRCMode"
+            android:layout_above="@+id/btnSelectRoom"
+            android:layout_alignRight="@+id/btnSelectRoom"
+            android:layout_alignEnd="@+id/btnSelectRoom"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:id="@+id/btnProfile"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/btnNotification"
+            android:layout_alignEnd="@+id/btnNotification" />
+
+        <Button
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:text="Notifications"
+            android:id="@+id/btnNotification"
+            android:layout_above="@+id/btnProfile"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/txtAFCStatus"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Welcome Gwen"
+        android:id="@+id/txtWelcomeMessage"
+        android:layout_marginTop="57dp"
+        android:layout_below="@+id/toggleConnectToAFC"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Hint: Connect to AFC first before you can drive it in auto mode or RC mode"
+        android:id="@+id/txtHint"
+        android:layout_below="@+id/toggleStartStop"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connect to AFC"
+        android:id="@+id/toggleConnectToAFC"
+        android:textOff="Connect to AFC"
+        android:textOn="Disconnect to AFC"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:checked="false"
+        android:layout_toLeftOf="@+id/txtAFCStatus"
+        android:layout_toStartOf="@+id/txtAFCStatus" />
+
+</RelativeLayout>
